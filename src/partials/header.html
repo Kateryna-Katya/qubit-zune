@@ -1,19 +1,41 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="./#hero" class="logo">
+          <span class="logo__icon"></span>
+          <span class="logo__text">Qubit<span class="accent">-</span>Zune</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="main-nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="./#hero" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="./#about" class="nav__link">О ботах</a></li>
+              <li class="nav__item"><a href="./#benefits" class="nav__link">Преимущества</a></li>
+              <li class="nav__item"><a href="./#innovations" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="./#blog" class="nav__link">Блог</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--primary">
+              <span>Начать</span>
+              <i data-lucide="arrow-up-right"></i>
+          </a>
+          <button class="burger" aria-label="Menu" id="burger">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
+<div class="menu-overlay" id="menu-overlay">
+  <div class="menu-overlay__bg"></div>
+  <nav class="menu-overlay__nav">
+      <ul class="menu-overlay__list">
+          <li><a href="./#hero" class="menu-link">Главная</a></li>
+          <li><a href="./#about" class="menu-link">О ботах</a></li>
+          <li><a href="./#benefits" class="menu-link">Преимущества</a></li>
+          <li><a href="./#innovations" class="menu-link">Инновации</a></li>
+          <li><a href="./#blog" class="menu-link">Блог</a></li>
+          <li><a href="./#contact" class="menu-link">Контакты</a></li>
+      </ul>
+  </nav>
+</div>
