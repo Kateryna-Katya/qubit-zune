@@ -1192,7 +1192,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 
 .pages h1 {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(1.9rem, 5vw, 3.5rem);
   color: var(--accent-color);
   margin-bottom: 40px;
   line-height: 1.1;
